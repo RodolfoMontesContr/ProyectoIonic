@@ -1,0 +1,7 @@
+{
+  "name": "proyectoionic",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
