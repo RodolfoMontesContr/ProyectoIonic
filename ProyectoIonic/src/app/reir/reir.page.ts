@@ -1,16 +1,16 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { NavController } from '@ionic/angular';
 
 @Component({
-  selector: 'app-home',
-  templateUrl: 'home.page.html',
-  styleUrls: ['home.page.scss'],
+  selector: 'app-reir',
+  templateUrl: './reir.page.html',
+  styleUrls: ['./reir.page.scss'],
 })
-export class HomePage {
+export class ReirPage implements OnInit {
 
   constructor(
     private navCtrl: NavController
-  ) {}
+  ) { }
 
   goJuegos(){
     this.navCtrl.navigateForward(['juegos']);
@@ -21,4 +21,7 @@ export class HomePage {
   goReir(){
     this.navCtrl.navigateForward(['reir']);
   }
+  ngOnInit() {
+  }
+
 }

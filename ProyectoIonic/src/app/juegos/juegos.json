@@ -1,0 +1,36 @@
+{
+
+    "seccion": [
+        {
+            "title": "Todos los juegos móviles",
+            "type": "continue",
+            "juegos": [
+                {
+                    "id": 1,
+                    "title": "StrangerThings3"
+                },
+                {
+                    "id": 2,
+                    "title": "StrangerThings1984"
+                },
+                {
+                    "id": 3,
+                    "title": "GatitosExplosivos"
+                },
+                {
+                    "id": 4,
+                    "title": "Moonlighter"
+                },
+                {
+                    "id": 5,
+                    "title": "BowlingBallers"
+                },
+                {
+                    "id": 6,
+                    "title": "AsphaltExtreme"
+                }
+            ]
+        }
+    ]
+        
+}
