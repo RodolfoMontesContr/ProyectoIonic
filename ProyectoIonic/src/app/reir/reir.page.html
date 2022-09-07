@@ -5,35 +5,109 @@
 </ion-header>
 
 <ion-content>
+  <ion-slides class="slider imagenreir" [options]="slideOpts">
+    <ion-slide class="displayflex">
+      <div>
+      <img src="../../assets/Parareir/+16.png" alt="" class="edadlogo">
+      <img src="../../assets/Parareir/peakyblinders.logo.png" alt="" class="serielogo">
+      </div>
+      <img src="../../assets/Parareir/PeakyBlinders.jpg" alt="">
+      <ion-fab horizontal="end">
+        <ion-fab-button color="none">
+          <img src="../../assets/Parareir/Peakymini.jpg" alt="">
+        </ion-fab-button>
+        <ion-fab-button color="none">
+          <ion-icon name="happy-outline"></ion-icon>
+        </ion-fab-button>
+        <ion-label class="fontboton">55 mil</ion-label>
+        <ion-fab-button color="none" class="displayflex">
+          <ion-icon name="add-outline"></ion-icon>
+        </ion-fab-button>
+        <ion-label class="fontboton">Mi lista</ion-label>
+        <ion-fab-button color="none">
+          <ion-icon name="navigate-outline"></ion-icon>
+        </ion-fab-button>
+        <ion-label class="fontboton">100 mil</ion-label>
+        <ion-fab-button color="none">
+          <ion-icon name="play-outline"></ion-icon>
+        </ion-fab-button>
+        <ion-label class="fontboton">Ver</ion-label>
+      </ion-fab>
+      <ion-fab vertical="bottom" horizontal="start" slot="fixed">
+        <ion-fab-button color="none">
+          <ion-icon name="volume-mute-outline"></ion-icon>
+        </ion-fab-button>
+      </ion-fab>
+    </ion-slide>
 
-  
+    <ion-slide class="displayflex">
+      <div>
+      <img src="../../assets/Parareir/+16.png" alt="" class="edadlogo">
+      <img src="../../assets/Parareir/Mivillanologo.png" alt="" class="serielogo">
+      </div>
+      <img src="../../assets/Parareir/Mivillano.jpg" alt="">
+      <ion-fab horizontal="end">
+        <ion-fab-button color="none">
+          <img src="../../assets/Parareir/mivillanomini.jpeg" alt="">
+        </ion-fab-button>
+        <ion-fab-button color="none">
+          <ion-icon name="happy-outline"></ion-icon>
+        </ion-fab-button>
+        <ion-label class="fontboton">55 mil</ion-label>
+        <ion-fab-button color="none" class="displayflex">
+          <ion-icon name="add-outline"></ion-icon>
+        </ion-fab-button>
+        <ion-label class="fontboton">Mi lista</ion-label>
+        <ion-fab-button color="none">
+          <ion-icon name="navigate-outline"></ion-icon>
+        </ion-fab-button>
+        <ion-label class="fontboton">100 mil</ion-label>
+        <ion-fab-button color="none">
+          <ion-icon name="play-outline"></ion-icon>
+        </ion-fab-button>
+        <ion-label class="fontboton">Ver</ion-label>
+      </ion-fab>
+      <ion-fab vertical="bottom" horizontal="start" slot="fixed">
+        <ion-fab-button color="none">
+          <ion-icon name="volume-mute-outline"></ion-icon>
+        </ion-fab-button>
+      </ion-fab>
+    </ion-slide>
+    
+    <ion-slide class="displayflex">
+      <div>
+      <img src="../../assets/Parareir/+16.png" alt="" class="edadlogo">
+      <img src="../../assets/Parareir/Househusbandlogo.png" alt="" class="serielogo">
+      </div>
+      <img src="../../assets/Parareir/Househusband.jpg" alt="">
+      <ion-fab horizontal="end">
+        <ion-fab-button color="none">
+          <img src="../../assets/Parareir/Househusbandmini.jpg" alt="">
+        </ion-fab-button>
+        <ion-fab-button color="none">
+          <ion-icon name="happy-outline"></ion-icon>
+        </ion-fab-button>
+        <ion-label class="fontboton">55 mil</ion-label>
+        <ion-fab-button color="none" class="displayflex">
+          <ion-icon name="add-outline"></ion-icon>
+        </ion-fab-button>
+        <ion-label class="fontboton">Mi lista</ion-label>
+        <ion-fab-button color="none">
+          <ion-icon name="navigate-outline"></ion-icon>
+        </ion-fab-button>
+        <ion-label class="fontboton">100 mil</ion-label>
+        <ion-fab-button color="none">
+          <ion-icon name="play-outline"></ion-icon>
+        </ion-fab-button>
+        <ion-label class="fontboton">Ver</ion-label>
+      </ion-fab>
+      <ion-fab vertical="bottom" horizontal="start" slot="fixed">
+        <ion-fab-button color="none">
+          <ion-icon name="volume-mute-outline"></ion-icon>
+        </ion-fab-button>
+      </ion-fab>
+    </ion-slide>
+
+  </ion-slides>
 
 </ion-content>
-<ion-tabs>
-  <ion-tab-bar slot="bottom" class="navcolor">
-    <ion-tab-button tab="home" (click)="goHome()">
-      <ion-icon name="home-outline"></ion-icon>
-      <ion-label>Inicio</ion-label>
-    </ion-tab-button>
-
-    <ion-tab-button tab="Juegos" (click)="goJuegos()">
-      <ion-icon name="game-controller-outline"></ion-icon>
-      <ion-label>Juegos</ion-label>
-    </ion-tab-button>
-
-    <ion-tab-button tab="nuevos">
-      <ion-icon name="copy-outline"></ion-icon>
-      <ion-label>Nuevo y popular</ion-label>
-    </ion-tab-button>
-
-    <ion-tab-button tab="comedia" (click)="goReir()">
-      <ion-icon name="happy-outline"></ion-icon>
-      <ion-label>Para reir</ion-label>
-    </ion-tab-button>
-    
-    <ion-tab-button tab="Descargas">
-      <ion-icon name="arrow-down-circle-outline"></ion-icon>
-      <ion-label>Descargas</ion-label>
-    </ion-tab-button>
-  </ion-tab-bar>
-</ion-tabs>

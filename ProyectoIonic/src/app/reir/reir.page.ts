@@ -23,5 +23,9 @@ export class ReirPage implements OnInit {
   }
   ngOnInit() {
   }
+  slideOpts ={
+    direction: 'vertical',
+    slidesPerView : 1
+  }
 
 }
