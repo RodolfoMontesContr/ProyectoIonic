@@ -26,10 +26,59 @@
 @import "~@ionic/angular/css/flex-utils.css";
 
 body {
-    --ion-background-color: #121212;
+    background-color: black;
     --ion-text-color: #ffffff;
-    --ion-tab-bar-background:#121212;
+    --ion-tab-bar-background: black;
     --ion-tab-bar-text:#ffffff;
-
+    --ion-title-background: black;
 }
 
+.navcolor{
+    background-color: #121212;
+    width: 100%;
+    position: sticky;
+}
+
+header{
+    background-color: black;
+}
+.bgcolor{
+    background-color: black;
+}
+
+.juegosicono{
+    height: 350px;
+    width: 350px;
+    border-radius: 10px;
+}
+
+.slider{
+    height: 100%;
+}
+.juegosfont{
+    font-size:small;
+}
+
+.displayflex{
+    display: flex;
+    flex-direction: column;
+}
+
+.footerbottom{
+    position: fixed;
+    bottom: 10%;
+    width: 100%;
+    justify-content : center;
+}
+
+.juegostrailer{
+    height: auto;
+    width: auto;
+    border-radius: 10px;
+}
+
+.juegosiconotrailer{
+    height: 100px;
+    width: 100px;
+    border-radius: 30px;
+}
