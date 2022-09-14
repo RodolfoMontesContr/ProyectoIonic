@@ -1,0 +1,49 @@
+<ion-header [translucent]="true">
+  
+  <ion-toolbar>
+    <ion-searchbar></ion-searchbar>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true" class="bgcolor">
+  <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title size="large">Blank</ion-title>
+    </ion-toolbar>
+  </ion-header>
+
+
+  
+  <div id="container">
+    <strong>Ready to create an app?</strong>
+    <p>Start with Ionic <a target="_blank" rel="noopener noreferrer" href="https://ionicframework.com/docs/components">UI Components</a></p>
+  </div>
+  <ion-tabs>
+    <ion-tab-bar slot="bottom" class="navcolor">
+      <ion-tab-button tab="home" (click)="goHome()">
+        <ion-icon name="home-outline"></ion-icon>
+        <ion-label>Inicio</ion-label>
+      </ion-tab-button>
+  
+      <ion-tab-button tab="Juegos" (click)="goJuegos()">
+        <ion-icon name="game-controller-outline"></ion-icon>
+        <ion-label>Juegos</ion-label>
+      </ion-tab-button>
+  
+      <ion-tab-button tab="nuevos">
+        <ion-icon name="copy-outline"></ion-icon>
+        <ion-label>Nuevo y popular</ion-label>
+      </ion-tab-button>
+  
+      <ion-tab-button tab="comedia" (click)="goReir()">
+        <ion-icon name="happy-outline"></ion-icon>
+        <ion-label>Para reir</ion-label>
+      </ion-tab-button>
+      
+      <ion-tab-button tab="Descargas">
+        <ion-icon name="arrow-down-circle-outline"></ion-icon>
+        <ion-label>Descargas</ion-label>
+      </ion-tab-button>
+    </ion-tab-bar>
+  </ion-tabs>
+</ion-content>

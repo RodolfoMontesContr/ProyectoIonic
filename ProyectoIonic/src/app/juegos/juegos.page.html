@@ -1,0 +1,95 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title class="ion-align-items-left">Juegos</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="bgcolor" scroll="true">
+  <ion-row class="ion-align-items-center">
+    <ion-slide>
+      <img src="../../assets/PortadaJuegos.jpg" alt="PortadaJuegos">
+    </ion-slide>
+  </ion-row>
+  <ion-row>
+        <p>Todos los juegos móviles</p>
+  </ion-row>
+  <ion-row>
+    <ion-slides class="juegosicono slider" [options]="slideOpts">
+      <ion-slide class="displayflex">
+        <img src="../../assets/Juegos/AsphaltExtreme.jpg" alt="">
+        <ion-label class="ion-text-wrap juegosfont">Asphalt Extreme</ion-label>
+      </ion-slide>
+      <ion-slide class="displayflex">
+        <img src="../../assets/Juegos/BowlingBallers.jpg" alt="">
+        <ion-label class="ion-text-wrap juegosfont">Bowling Ballers</ion-label>
+      </ion-slide>
+      <ion-slide class="displayflex">
+        <img src="../../assets/Juegos/GatitosExplosivos.jpg" alt="">
+        <ion-label class="ion-text-wrap juegosfont">Gatitos Explosivos</ion-label>
+      </ion-slide>
+      <ion-slide class="displayflex">
+        <img src="../../assets/Juegos/Moonlighter.jpg" alt="" >
+        <ion-label class="ion-text-wrap juegosfont">Moonlighter</ion-label>
+      </ion-slide>
+      <ion-slide class="displayflex">
+        <img src="../../assets/Juegos/StrangerThings1984.jpg" alt="">
+        <ion-label class="ion-text-wrap juegosfont">Stranger Things 1984</ion-label>
+      </ion-slide>
+      <ion-slide class="displayflex">
+        <img src="../../assets/Juegos/StrangerThings3.jpg" alt="">
+        <ion-label class="ion-text-wrap juegosfont">Stranger Things 3: El juego</ion-label>
+      </ion-slide>
+
+    </ion-slides>
+  </ion-row>
+  
+  <ion-col>
+    <ion-row>
+      <p>Trailer de juegos</p>
+    </ion-row>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/LMdi0VlPJ0o" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen class="juegostrailer"></iframe>
+    <ion-row>
+      <ion-col size ="4" class="juegosiconotrailer">
+        <img src="../../assets/Juegos/StrangerThings3.jpg" alt="">
+      </ion-col>
+      <ion-col>
+        <p>Stranger Things 3: El juego</p>
+        <p> Aventuras</p>
+      </ion-col>
+    </ion-row>
+  </ion-col>
+  
+</ion-content>
+  <!--
+  <ion-tabs>
+    <ion-tab-bar class="navcolor">
+      <ion-tab-button tab="home" (click)="goHome()">
+        <ion-icon name="home-outline"></ion-icon>
+        <ion-label>Inicio</ion-label>
+      </ion-tab-button>
+  
+      <ion-tab-button tab="Juegos" (click)="goJuegos()">
+        <ion-icon name="game-controller-outline"></ion-icon>
+        <ion-label>Juegos</ion-label>
+      </ion-tab-button>
+  
+      <ion-tab-button tab="nuevos">
+        <ion-icon name="copy-outline"></ion-icon>
+        <ion-label>Nuevo y popular</ion-label>
+      </ion-tab-button>
+
+
+  
+      <ion-tab-button tab="comedia" (click)="goReir()">
+        <ion-icon name="happy-outline"></ion-icon>
+        <ion-label>Para reir</ion-label>
+      </ion-tab-button>
+      
+      <ion-tab-button tab="Descargas">
+        <ion-icon name="arrow-down-circle-outline"></ion-icon>
+        <ion-label>Descargas</ion-label>
+      </ion-tab-button>
+    </ion-tab-bar>
+  </ion-tabs>
+
+  -->

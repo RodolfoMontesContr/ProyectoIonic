@@ -1,0 +1,256 @@
+<ion-header mode="ios" translucent="true" class="ion-no-border">
+  
+  <ion-toolbar>
+    
+    <ion-searchbar class="searchBar" showCancelButton="always"></ion-searchbar>
+    <img class="logo" src="../../assets/logo.png">
+    <ion-row class="ion-justify-content-center ion-text-center">
+      <ion-col size="4" class="headLeft">
+        Series
+      </ion-col>
+      <ion-col size="4" class="headCenter">
+        Peliculas
+      </ion-col>
+      <ion-col size="4" tappable (click)="openCategories()" class="headRight">
+        Categorias <ion-icon name="caret-down-outline"></ion-icon>
+      </ion-col>
+    </ion-row>
+  </ion-toolbar>
+</ion-header>
+ 
+<ion-content fullscreen>
+  
+  <div class="spotlight" [style.background-image]="'url(../../assets/fondo.png)'">
+    <div class="gradient"></div>
+    <div class="info">
+      <span class="rating">{{ spotlight.rating }}</span>
+      <ion-row>
+        <ion-col size="4">
+          Terror
+        </ion-col>
+        <ion-col size="4">
+          Thriller
+        </ion-col>
+        <ion-col size="4">
+          Drama
+        </ion-col>
+      </ion-row>
+      <ion-row class="ion-align-items-center">
+        <ion-col size="4" class="ion-tex-center">
+          <div class="btn-vertical">
+            <ion-icon name="add"></ion-icon>
+            <span>Mi Lista</span>
+          </div>
+        </ion-col>
+        <ion-col size="4" class="ion-tex-center">
+          <div class="btn-play">
+            <ion-icon name="play" color="dark"></ion-icon>
+            <span><b>Reproducir</b></span>
+          </div>
+        </ion-col>
+        <ion-col size="4" class="ion-tex-center">
+          <div class="btn-vertical">
+            <ion-icon name="information-circle-outline"></ion-icon>
+            <span>Información</span>
+          </div>
+        </ion-col>
+      </ion-row>
+    </div>
+  </div>
+  
+  <ion-row>
+    <ion-col>
+    <p><b>Continuar viendo contenido de usuario</b></p>
+    </ion-col>
+    <ion-slides>
+      <ion-slide>
+        <ion-card>
+          <img src="../../assets/cv1.png">
+        </ion-card>
+      </ion-slide>
+      <ion-slide>
+        <ion-card>
+          <img src="../../assets/cv2.png">
+        </ion-card>
+      </ion-slide>
+      <ion-slide>
+        <ion-card>
+          <img src="../../assets/cv3.png">
+        </ion-card>
+      </ion-slide>
+    </ion-slides>
+   </ion-row>
+
+  <ion-row>
+    <ion-col>
+    <p><b>Series</b></p>
+  </ion-col>
+    <ion-slides>
+      <ion-slide>
+        <img src="../../assets/s1.png">
+        <ion-label></ion-label>
+      </ion-slide>
+      <ion-slide>
+        <img src="../../assets/s2.png">
+        <ion-label></ion-label>
+      </ion-slide>
+      <ion-slide>
+        <img src="../../assets/s3.png">
+        <ion-label></ion-label>
+      </ion-slide>
+    </ion-slides>
+  </ion-row>
+
+  <ion-row>
+    <ion-col>
+    <p><b>Tendencias</b></p>
+  </ion-col>
+    <ion-slides>
+      <ion-slide>
+        <img src="../../assets/t1.png">
+        <ion-label></ion-label>
+      </ion-slide>
+      <ion-slide>
+        <img src="../../assets/t2.png">
+        <ion-label></ion-label>
+      </ion-slide>
+      <ion-slide >
+        <img src="../../assets/t3.png">
+        <ion-label></ion-label>
+      </ion-slide>
+    </ion-slides>
+  </ion-row>
+
+
+  <ion-row>
+    <ion-col>
+    <p><b>Solo en Netflix</b></p>
+  </ion-col>
+    <ion-slides >
+      <ion-slide >
+        <img src="../../assets/sn1.png">
+        <ion-label></ion-label>
+      </ion-slide>
+      <ion-slide >
+        <img src="../../assets/sn2.png">
+        <ion-label ></ion-label>
+      </ion-slide>
+      <ion-slide>
+        <img src="../../assets/sn3.png">
+        <ion-label></ion-label>
+      </ion-slide>
+      <ion-slide>
+        <img src="../../assets/sn4.png">
+        <ion-label ></ion-label>
+      </ion-slide>
+    </ion-slides>
+  </ion-row>
+
+  <ion-row>
+    <ion-col>
+    <p><b></b></p>
+  </ion-col>
+    <ion-slides >
+      <ion-slide >
+        <ion-label></ion-label>
+      </ion-slide>
+      <ion-slide >
+        <ion-label></ion-label>
+      </ion-slide>
+      <ion-slide >
+        <ion-label></ion-label>
+      </ion-slide>
+      <ion-slide>
+        <ion-label></ion-label>
+      </ion-slide>
+    </ion-slides>
+  </ion-row>
+
+  <ion-row>
+    <ion-col>
+    <p><b></b></p>
+  </ion-col>
+    <ion-slides class="juegosicono slider" [options]="slideOpts">
+      <ion-slide class="displayflex">
+
+        <ion-label class="ion-text-wrap juegosfont"></ion-label>
+      </ion-slide>
+      <ion-slide class="displayflex">
+
+        <ion-label class="ion-text-wrap juegosfont"></ion-label>
+      </ion-slide>
+      <ion-slide class="displayflex">
+ 
+        <ion-label class="ion-text-wrap juegosfont"></ion-label>
+      </ion-slide>
+      <ion-slide class="displayflex">
+
+        <ion-label class="ion-text-wrap juegosfont"></ion-label>
+      </ion-slide>
+    </ion-slides>
+  </ion-row>
+
+  <ion-row>
+    <ion-col>
+    <p><b></b></p>
+  </ion-col>
+    <ion-slides class="juegosicono slider" [options]="slideOpts">
+      <ion-slide class="displayflex">
+
+        <ion-label class="ion-text-wrap juegosfont"></ion-label>
+      </ion-slide>
+      <ion-slide class="displayflex">
+
+        <ion-label class="ion-text-wrap juegosfont"></ion-label>
+      </ion-slide>
+      <ion-slide class="displayflex">
+ 
+        <ion-label class="ion-text-wrap juegosfont"></ion-label>
+      </ion-slide>
+      <ion-slide class="displayflex">
+
+        <ion-label class="ion-text-wrap juegosfont"></ion-label>
+      </ion-slide>
+    </ion-slides>
+  </ion-row>
+
+  <ion-row>
+    <ion-col>
+    <p><b></b></p>
+  </ion-col>
+    <ion-slides class="juegosicono slider" [options]="slideOpts">
+      <ion-slide class="displayflex">
+        <ion-label class="ion-text-wrap juegosfont"></ion-label>
+      </ion-slide>
+      <ion-slide class="displayflex">
+        <ion-label class="ion-text-wrap juegosfont"></ion-label>
+      </ion-slide>
+      <ion-slide class="displayflex">
+        <ion-label class="ion-text-wrap juegosfont"></ion-label>
+      </ion-slide>
+      <ion-slide class="displayflex">
+        <ion-label class="ion-text-wrap juegosfont"></ion-label>
+      </ion-slide>
+    </ion-slides>
+  </ion-row>
+  <ion-row>
+    <ion-col>
+    <p><b></b></p>
+  </ion-col>
+    <ion-slides class="juegosicono slider" [options]="slideOpts">
+      <ion-slide class="displayflex">
+        <ion-label class="ion-text-wrap juegosfont"></ion-label>
+      </ion-slide>
+      <ion-slide class="displayflex">
+        <ion-label class="ion-text-wrap juegosfont"></ion-label>
+      </ion-slide>
+      <ion-slide class="displayflex">
+        <ion-label class="ion-text-wrap juegosfont"></ion-label>
+      </ion-slide>
+      <ion-slide class="displayflex">
+        <ion-label class="ion-text-wrap juegosfont"></ion-label>
+      </ion-slide>
+    </ion-slides>
+  </ion-row>
+  
+  </ion-content>
