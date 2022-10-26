@@ -1,0 +1,8 @@
+{
+  "name": "ProyectoIonic",
+  "integrations": {
+    "capacitor": {},
+    "cordova": {}
+  },
+  "type": "angular"
+}
