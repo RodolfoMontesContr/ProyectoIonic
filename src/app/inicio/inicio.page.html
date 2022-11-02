@@ -59,26 +59,28 @@
   </div>
   
   <ion-row>
-    <ion-col>
+    <ion-row>
     <p><b>Continuar viendo contenido de usuario</b></p>
-    </ion-col>
-    <ion-slides>
-      <ion-slide>
-        <ion-card>
+    </ion-row>
+    <ion-row>
+    <ion-slides  class="juegosicono slider" [options]="slideInicio">
+      <ion-slide class="displayflex">
+       
           <img src="../../assets/cv1.png">
-        </ion-card>
+        
       </ion-slide>
-      <ion-slide>
-        <ion-card>
+      <ion-slide class="displayflex">
+       
           <img src="../../assets/cv2.png">
-        </ion-card>
+       
       </ion-slide>
-      <ion-slide>
-        <ion-card>
+      <ion-slide class="displayflex">
+        
           <img src="../../assets/cv3.png">
-        </ion-card>
+        
       </ion-slide>
     </ion-slides>
+  </ion-row>
    </ion-row>
 
   <ion-row>

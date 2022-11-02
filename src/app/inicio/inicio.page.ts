@@ -15,5 +15,12 @@ export class InicioPage implements OnInit {
   constructor() { }
 
   ngOnInit() {
+    
   }
+  slideInicio ={
+    slidesPerView : 3.2,
+    spaceBetween: 10,
+    freeMode: true
+  
+}
 }

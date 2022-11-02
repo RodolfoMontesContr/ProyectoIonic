@@ -1,0 +1,31 @@
+<ion-header style="background-color: black;">
+  <ion-toolbar>
+    <ion-title style="text-align: center;">Login</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <div>
+    <img src="../../assets/login-logo.png" alt="">
+  </div>
+  <div class="overimg" style="text-align: center;">
+    <label for="usuario">Correo</label>
+    <br>
+    <input type="text" id="usuario" [(ngModel)]="credenciales.correo">
+  </div>
+  <br>
+  <div style="text-align: center;">
+    <label for="contraseña">Contraseña</label>
+    <br>
+    <input type="password" id="contraseña" [(ngModel)]="credenciales.password">
+  </div>
+  <br>
+  <div style="text-align: center;">
+    <ion-button color="danger" (click)="login()">Iniciar Sesion</ion-button>
+  </div>
+  <br>
+  <div style="text-align: center;">
+    <a href="/registro" style="text-decoration: none;">¿No tienes cuenta? registrate.</a>
+  </div>
+  
+</ion-content>

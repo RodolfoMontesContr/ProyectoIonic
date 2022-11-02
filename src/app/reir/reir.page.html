@@ -1,22 +1,36 @@
+<script>
+   let video = document.getElementById('video');
+            document.getElementById('btn').addEventListener('click', button_action);
+
+            function button_action() {
+                if (video.paused) {
+                    video.play();
+                    btn.innerHTML = "Puase Video";
+                } else {
+                    video.pause();
+                    btn.innerHTML = "Play Video"
+                }
+            };
+</script>
 <ion-header>
   <ion-toolbar>
     <ion-title>Para reir</ion-title>
   </ion-toolbar>
 </ion-header>
 
-<ion-content>
+<ion-content [scrollEvents]="true" (ionScroll)="didScroll($event)">
   <ion-slides class="slider imagenreir" [options]="slideOpts">
     <ion-slide class="displayflex">
       <div>
       <img src="../../assets/Parareir/+16.png" alt="" class="edadlogo">
       <img src="../../assets/Parareir/peakyblinders.logo.png" alt="" class="serielogo">
       </div>
-      <img src="../../assets/Parareir/PeakyBlinders.jpg" alt="">
+      <video #videoauto autoplay controls src="../../assets/Videos/PeakyBlinders.mp4" width="100%"></video>
       <ion-fab horizontal="end">
         <ion-fab-button color="none">
           <img src="../../assets/Parareir/Peakymini.jpg" alt="">
         </ion-fab-button>
-        <ion-fab-button color="none" (click)="playvideo()">
+        <ion-fab-button color="none" (click)="videopausa" id="btn">
           <ion-icon name="happy-outline"></ion-icon>
         </ion-fab-button>
         <ion-label class="fontboton">55 mil</ion-label>
@@ -45,7 +59,7 @@
       <img src="../../assets/Parareir/+16.png" alt="" class="edadlogo">
       <img src="../../assets/Parareir/Mivillanologo.png" alt="" class="serielogo">
       </div>
-      <img src="../../assets/Parareir/Mivillano.jpg" alt="">
+      <video #videoauto preload="auto" controls src="../../assets/Videos/MVF.mp4" width="100%"></video>
       <ion-fab horizontal="end">
         <ion-fab-button color="none">
           <img src="../../assets/Parareir/mivillanomini.jpeg" alt="">
@@ -79,7 +93,7 @@
       <img src="../../assets/Parareir/+16.png" alt="" class="edadlogo">
       <img src="../../assets/Parareir/Househusbandlogo.png" alt="" class="serielogo">
       </div>
-      <img src="../../assets/Parareir/Househusband.jpg" alt="">
+      <video #videoauto preload="auto" controls src="../../assets/Videos/Yakuza.mp4" width="100%"></video>
       <ion-fab horizontal="end">
         <ion-fab-button color="none">
           <img src="../../assets/Parareir/Househusbandmini.jpg" alt="">

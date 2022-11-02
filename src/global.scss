@@ -31,7 +31,7 @@ body {
     --ion-tab-bar-background: black;
     --ion-tab-bar-text:#ffffff;
     --ion-title-background: black;
-    --ionic-background:black;
+    --ion-background-color:black;
 }
 
 .navcolor{
@@ -82,4 +82,9 @@ header{
     height: 100px;
     width: 100px;
     border-radius: 30px;
+}
+
+.videosslide{
+    height: 1920px;
+    width: 100%;
 }
